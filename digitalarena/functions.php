@@ -5,7 +5,7 @@
  */
 define( 'SITE_NAME', 'Child' );
 define( 'SITE_SLUG', 'child' );
-define( 'REMOTE_URL', 'https://punchtemp.wpengine.com/' );
+define( 'REMOTE_URL', 'https://digitalarena.tech/' );
 define( 'THEME_VERSION', '1' );
 define( 'THEME_ENV', 'dev' );
 define( 'THEME_ASSETS', get_stylesheet_directory_uri() . '/assets/' ); 
