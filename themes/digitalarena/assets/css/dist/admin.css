@@ -1,0 +1,55 @@
+.avia_button_box > div{
+    background-image: none;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.avia-alignment-center {
+    text-align: center;
+}
+
+.avia-alignment-right {
+    text-align: right;
+}
+
+.avia-image.column-avia-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.avia-modal-iconswitcher-titles{
+    padding: 0;
+}
+.avia-modal .avia-form-element-container .avia-form-element-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.menu-item-title .post-state {
+    display: none;
+}
+
+/* ACF */
+.acf-fields .one-fourth,
+.acf-fields .one-third,
+.acf-fields .one-half{
+    float: left;
+    clear: none
+}
+.acf-fields .one-fourth.first,
+.acf-fields .one-third.first,
+.acf-fields .one-half.first{
+    clear: both;
+}
+.acf-fields .one-fourth{
+    width: 25%;
+}
+.acf-fields .one-third{
+    width: 33.333%;
+}
+.acf-fields .one-half{
+    width: 50%;
+}

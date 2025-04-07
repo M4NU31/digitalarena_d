@@ -1,0 +1,9 @@
+_deploy
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+node_modules
+Thumbs.db
