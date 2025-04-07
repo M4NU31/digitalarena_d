@@ -6,7 +6,7 @@
 define( 'SITE_NAME', 'Digital Arena' );
 define( 'SITE_SLUG', 'digitalarena' );
 define( 'REMOTE_URL', 'https://digitalarena.tech/' );
-define( 'THEME_VERSION', '1.0.0' );
+define( 'THEME_VERSION', '1.0.1' );
 define( 'THEME_ENV', 'dev' );
 define( 'THEME_ASSETS', get_stylesheet_directory_uri() . '/assets/' ); 
 define( 'THEME_INCLUDES', get_stylesheet_directory() . '/includes/' ); 
