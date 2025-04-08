@@ -13,7 +13,7 @@ add_filter( 'avf_alb_supported_post_types', 'punch_child_enable_alb_for_cpts' );
  * Enable Gutenberg per post type
  */
 function punch_child_gutenberg( $new_use_block_editor, $use_block_editor, $post_type ) {
-	$gutenberg_post_types = array( 'post' );
+	$gutenberg_post_types = array( 'post', 'review', 'guia' );
 
 	return in_array( $post_type, $gutenberg_post_types ) ? true : false;
 }
