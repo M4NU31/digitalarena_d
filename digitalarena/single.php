@@ -57,6 +57,8 @@ if( have_posts() ) :
 					}
 					?>
 
+					<?php comments_template(); ?>
+
 					<a href="<?php echo $back_to['link']; ?>" class="avia-button avia-icon_select-no avia-style-default avia-color-goback avia-size-large">
 						<span class="avia_iconbox_title"><?php echo $back_to['label']; ?></span>
 					</a>
@@ -66,8 +68,6 @@ if( have_posts() ) :
         </div>
 	</div>
 </div>
-
-<?php comments_template(); ?>
 
 <?php if ( punch_child_has_related_posts() ): ?>
 <div class="main_color related-posts-section">
