@@ -52,7 +52,7 @@ if( have_posts() ) :
 					
 					<?php 
 					if( has_term( '', 'post_tag', $post_id ) ) {
-						echo "<h3 class='tags-label'>Tags</h3>";
+						echo "<h4 class='tags-label'>Tags</h4>";
 						echo "<div class='ep-post-terms'>" . EnfoldPlusHelpers::get_terms_with_links( $post_id, 'post_tag', " ", '5' ) . "</div>"; 
 					}
 					?>
