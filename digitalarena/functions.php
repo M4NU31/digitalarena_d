@@ -127,6 +127,7 @@ function punch_child_wp_footer() {
 }
 add_action( 'wp_footer', 'punch_child_wp_footer', 20, 1 );
 
+
 require THEME_INCLUDES . 'theme-functions.php';
 require THEME_INCLUDES . 'theme-shortcodes.php';
 require THEME_INCLUDES . 'theme-overrides.php';
