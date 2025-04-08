@@ -30,30 +30,6 @@ if( have_posts() ) :
 
 					<?php echo punch_child_single_title( $post_id ); ?>
 					<div class="single-post-meta">
-						<?php 
-						if( has_term( '', 'post_author', $post_id ) ) {
-							?>
-							<div class="single-post-authors">
-							<?php
-							$the_authors = get_the_terms( $post_id, 'post_author' );
-							?>
-							<span>By:
-							<?php
-							foreach( $the_authors as $key => $term ) {
-								$author_name = $term->name;
-								// echo author name with a an anchor link to #author-box and a comma separator, excluding the last item
-
-								echo '<a href="#author">' . $author_name . '</a>';
-								if ( $key !== array_key_last( $the_authors ) ) {
-									echo ", ";
-								}
-							}
-							?>
-							</span>
-							</div>
-							<?php
-						}
-						?>
 						<div class="single-post-date">
 							<?php echo get_the_date( get_option( 'date_format' ), $post_id ); ?>
 						</div>
@@ -68,22 +44,8 @@ if( have_posts() ) :
 					
 					<?php 
 					if( has_term( '', 'post_tag', $post_id ) ) {
-						echo "<div class='ep-post-terms'>" . EnfoldPlusHelpers::get_terms_with_links( $post_id, 'post_tag', ", ", '5' ) . "</div>"; 
-					}
-
-					if( has_term( '', 'post_author', $post_id ) ) {
-						$authors = get_the_terms( $post_id, 'post_author' );
-						$author_or_authors = count( $authors ) > 1 ? 'Authors' : 'Author';
-						?>
-						<div id="author" class="author-box">
-						<h6>About the <?php echo $author_or_authors; ?></h6>
-						<?php
-						foreach( $the_authors as $key => $term ) {
-							include( THEME_INCLUDES . '/author-box.php' );
-						}
-						?>
-						</div>
-						<?php
+						echo "<h3 class='tags-label'>Tags</h3>";
+						echo "<div class='ep-post-terms'>" . EnfoldPlusHelpers::get_terms_with_links( $post_id, 'post_tag', " ", '5' ) . "</div>"; 
 					}
 					?>
 
@@ -96,6 +58,8 @@ if( have_posts() ) :
         </div>
 	</div>
 </div>
+
+<?php comments_template(); ?>
 
 <?php if ( punch_child_has_related_posts() ): ?>
 <div class="main_color related-posts-section">
