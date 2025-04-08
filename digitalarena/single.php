@@ -16,7 +16,7 @@ if( have_posts() ) :
 	$back_to = punch_child_get_back_button( $post_id, $post_category );
 	
 ?>
-<div class="single-content-section avia-section main_color avia-section-default avia-no-border-styling container_wrap fullsize avia-builder-el-0 avia-builder-el-first">
+<div class="single-content-section avia-section alternate_color avia-section-default avia-no-border-styling container_wrap fullsize avia-builder-el-0 avia-builder-el-first">
 	<div class="container">
 		<div class="content">
 			<div class="entry-content-wrapper">
@@ -38,6 +38,14 @@ if( have_posts() ) :
 						<div class="single-post-thumbnail"><?php the_post_thumbnail(); ?></div>
 					<?php } ?>
 				</div>
+			</div>
+        </div>
+	</div>
+</div>
+<div class="single-content-section avia-section main_color avia-section-default avia-no-border-styling container_wrap fullsize">
+	<div class="container">
+		<div class="content">
+			<div class="entry-content-wrapper">
 				<?php the_content(); ?>
 				<div class="single-post-footer">
 					<?php avia_social_share_links( array(), false, "Share this post" ); ?>
