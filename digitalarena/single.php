@@ -34,9 +34,6 @@ if( have_posts() ) :
 							<?php echo get_the_date( get_option( 'date_format' ), $post_id ); ?>
 						</div>
 					</div>
-					<?php if ( get_field( 'hide_featured_image' ) == 0 && !empty( get_the_post_thumbnail() ) ) { ?>
-						<div class="single-post-thumbnail"><?php the_post_thumbnail(); ?></div>
-					<?php } ?>
 				</div>
 			</div>
         </div>
@@ -46,6 +43,9 @@ if( have_posts() ) :
 	<div class="container">
 		<div class="content">
 			<div class="entry-content-wrapper">
+				<?php if ( get_field( 'hide_featured_image' ) == 0 && !empty( get_the_post_thumbnail() ) ) { ?>
+						<div class="single-post-thumbnail"><?php the_post_thumbnail(); ?></div>
+					<?php } ?>
 				<?php the_content(); ?>
 				<div class="single-post-footer">
 					<?php avia_social_share_links( array(), false, "Share this post" ); ?>
