@@ -80,8 +80,19 @@ define( 'THEME_STYLES', array(
 		'sc' => 'ep_heading',
 		'styles' => array(
 			array(
-				'label' => 'Home - Hero Section',
-				'class' => 'heading--home-hero',
+				'label' => 'Extra large heading',
+				'class' => 'heading--extra-large',
+			),
+		)
+    ),
+
+	/** Split Heading */
+    array(
+		'sc' => 'ep_split_heading',
+		'styles' => array(
+			array(
+				'label' => 'Extra large heading',
+				'class' => 'heading--extra-large',
 			),
 		)
     ),

@@ -28,7 +28,7 @@ function punch_child_avf_button_styles( $options ) {
 	else:
 	
 		$options = array(
-			'Main' => 'main',
+			'Solid' => 'solid',
 			'Outline' => 'outline',
 			'Link' => 'link'
 		);
@@ -400,3 +400,18 @@ function enfold_child_mega_menu_featured_post( $output, $item, $depth, $args ) {
     return $output . ob_get_clean();
 }
 add_filter( 'walker_nav_menu_start_el', 'enfold_child_mega_menu_featured_post', 999, 4 );
+
+/**
+ * Custom Split Highlight Style Options
+ */
+function custom_highlight_style_options( $options ){
+
+	$options = array(
+		'Default' => '',
+		'Turquoise' => 'turquoise',
+	);
+
+	return $options;
+
+}
+add_filter( 'avf_ep_highlight_style_options' , 'custom_highlight_style_options', 10, 1);

@@ -6,7 +6,7 @@
 define( 'SITE_NAME', 'Digital Arena' );
 define( 'SITE_SLUG', 'digitalarena' );
 define( 'REMOTE_URL', 'https://digitalarena.tech/' );
-define( 'THEME_VERSION', '1.0.2' );
+define( 'THEME_VERSION', '1.0.3' );
 define( 'THEME_ENV', 'dev' );
 define( 'THEME_ASSETS', get_stylesheet_directory_uri() . '/assets/' ); 
 define( 'THEME_INCLUDES', get_stylesheet_directory() . '/includes/' ); 
@@ -58,7 +58,7 @@ add_action( 'after_setup_theme', 'punch_child_setup', 51 );
  * Enqueue scripts and styles.
  */
 function punch_child_scripts() {
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null, 'all' );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap', array(), null, 'all' );
 	wp_enqueue_style( 'avia-module-main', THEME_ASSETS . 'css/main.css', array(), THEME_VERSION, 'all' );
 	wp_enqueue_script( 'avia-module-main', THEME_ASSETS . 'js/main.js', array(), THEME_VERSION, true );
 
